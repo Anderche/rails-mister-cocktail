@@ -1,7 +1,11 @@
+
 <h1><%= @cocktail.name %></h1>
 
 <% @cocktail.doses.each do |dose| %>
-<p><%= dose.description %> - <%= dose.ingredient.name %></p>
+<h5><%= dose.description %> - <%= dose.ingredient.name %></h5>
+<p><%= link_to "Delete", cocktail_dose_path(@cocktail, dose),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %></p>
 <% end %>
 
 <h5>Add a Dose:</h5>
@@ -10,6 +14,8 @@
   <%= f.input :description %>
   <%= f.association :ingredient, collection: @ingredients %>
   <%= f.button :submit %>
-<% end %>
 
+  <!-- ##### OR alternate for editing button text ##### -->
+  <%#= f.button :submit,  value: "update" %>
+<% end %>
 
