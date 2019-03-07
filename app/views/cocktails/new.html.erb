@@ -1,3 +1,10 @@
 <!-- simple form -->
 
 <h1><%= "Add your cocktail" %></h1>
+
+<!-- REGARDING SIMPLE FORMS: f.input MUST pass in header (ex: name) -->
+<%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "ADD drink", class: "btn btn-primary" %>
+<% end %>
+
