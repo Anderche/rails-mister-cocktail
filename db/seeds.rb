@@ -10,18 +10,28 @@
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
 
-# ############ OPTIONAL #############
+
 
 require 'open-uri' # Needed to open web urls
 require 'json'
 
-url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+# SEED the COCKTAILS
 
-to_add = JSON.parse(open(url).read)
+url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail'
+items_serialized = open(url).read
+items = JSON.parse(items_serialized)["drinks"]
 
-drinks = to_add['drinks']
+items.each do |item|
+  Cocktail.create( name: item["strDrink"] )
+  p item["strDrink"]
 
-puts drinks
+end
+
+# SEED the INGREDIENTS
+
+url_ing = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+to_add_drinks = JSON.parse(open(url_ing).read)
+drinks = to_add_drinks['drinks']
 
 puts 'Creating ingredients...'
 30.times do |n|

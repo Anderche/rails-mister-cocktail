@@ -3,3 +3,17 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+
+$gray: #e8ffdd;
+$spacer: 8px;
+
+body {
+  background: $gray; // Using this variable
+}
+
+.btn {
+  padding: $spacer ($spacer * 3);
+}
+
+
