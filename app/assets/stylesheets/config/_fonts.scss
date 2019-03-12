@@ -1,9 +1,9 @@
 // Import Google fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
-// Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+// // Define fonts for body and headers
+// $body-font: "Open Sans", "Helvetica", "sans-serif";
+// $headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,3 +14,40 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500i,700');
+
+// Font Variables
+$roboto-slab-400: 'Roboto Mono', 400, serif;
+$roboto-slab-500i: 'Roboto Mono', 500, serif;
+$roboto-slab-700: 'Roboto Mono', 700, serif;
+$open-sans: 'Open Sans', sans-serif;
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #171717;
+$secondary-color: #232323;
+$tertiary-color: #333333;
+$pgraph-color: #3728FF;
+
+h1 {
+  font: 100% $roboto-slab-400;
+  color: $primary-color;
+}
+
+h2,h3,h4 {
+  font: 100% $roboto-slab-500i;
+  color: $secondary-color;
+}
+
+h5,h6 {
+  font: 100% $roboto-slab-700;
+  color: $tertiary-color;
+}
+
+p {
+	font: 100% $roboto-slab-700;
+  color: $pgraph-color;
+}
