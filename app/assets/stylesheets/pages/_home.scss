@@ -14,8 +14,7 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #171717;
 $secondary-color: #232323;
 $tertiary-color: #333333;
-
-
+$pgraph-color: #3728FF;
 
 h1 {
   font: 100% $roboto-slab-400;
@@ -24,7 +23,7 @@ h1 {
 
 h2,h3,h4 {
   font: 100% $roboto-slab-500i;
-  color: $seconary-color;
+  color: $secondary-color;
 }
 
 h5,h6 {
@@ -32,5 +31,7 @@ h5,h6 {
   color: $tertiary-color;
 }
 
-
-
+p {
+	font: 100% $roboto-slab-700;
+  color: $pgraph-color;
+}
