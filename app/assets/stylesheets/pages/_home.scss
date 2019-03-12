@@ -11,11 +11,26 @@ $roboto-slab-700: 'Roboto Mono', 700, serif;
 $open-sans: 'Open Sans', sans-serif;
 
 $font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #171717;
+$secondary-color: #232323;
+$tertiary-color: #333333;
 
-body {
-  font: 100% $font-stack;
+
+
+h1 {
+  font: 100% $roboto-slab-400;
   color: $primary-color;
 }
+
+h2,h3,h4 {
+  font: 100% $roboto-slab-500i;
+  color: $seconary-color;
+}
+
+h5,h6 {
+  font: 100% $roboto-slab-700;
+  color: $tertiary-color;
+}
+
 
 
