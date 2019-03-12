@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500i,700');
+
+// Font Variables
+$roboto-slab-400: 'Roboto Mono', 400, serif;   
+$open-sans: 'Open Sans', sans-serif;
+
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
